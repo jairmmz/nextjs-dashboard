@@ -6,6 +6,11 @@ import Pagination from '@/app/ui/invoices/pagination';
 import InvoicesTable from '@/app/ui/invoices/table';
 import Search from '@/app/ui/search';
 import { fetchInvoicesPages } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Facturas',
+  }
 
 export default async function Page({
     searchParams,
